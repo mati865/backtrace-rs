@@ -62,6 +62,7 @@ fn main() {
         && !target.contains("android")
         && !target.contains("haiku")
         && !target.contains("vxworks")
+        && !target.contains("relibc")
     {
         build.define("HAVE_DL_ITERATE_PHDR", "1");
     }
